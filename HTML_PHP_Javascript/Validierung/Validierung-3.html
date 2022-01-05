@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular 6 (3)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Task</h1>
+      <form onsubmit="validateForms( event )">
+        <div class="row">
+          <label class="col-md-6 col-6" for="product">
+            <div class="row">
+              <select class="form-control" id="product">
+                <option value="0">Produkt auswählen</option>
+                <option value="1">Iphone</option>
+                <option value="2">Samsung</option>
+                <option value="3">Huhawai</option>
+              </select>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <label class="col-md-6 col-6"></label>
+        <div class="row">
+          <label for="text" class="form-label">Beschreibung</label>
+          <textarea class="form-control" placeholder="Bitte Text eingeben:" id="text" style="height: 100px"></textarea>
+          <label for="text"></label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <div class="row">
+            <label class="selected">Art des Problems</label>
+            <select class="form-select" id="selected" onchange="validateTextField()">
+              <option value="0">Typ</option>
+              <option value="1">Bug</option>
+              <option value="2">Improvment</option>
+              <option value="3">Feature</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <div class="row">
+            <label class="emergency">Wichtigkeit</label>
+            <select class="form-select" id="emergency">
+              <option value="0"></option>Priorität</option>
+              <option value="1">Tief</option>
+              <option value="2">Mittel</option>
+              <option value="3">Hoch</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <div class="row">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02" id="upload">Upload</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <div class="row">
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox">
+              <label class="form-check-label" for="exampleCheck1">Ich bestätige das ich die Informationen nicht an
+                dritte weiter gebe</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+          <div class="row">
+            <button type="submit" class="btn btn-primary" id="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+    <script src="Java-script-3.js"></script>
+  </body>
+
+</html>
